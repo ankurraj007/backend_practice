@@ -37,8 +37,4 @@ app.use((req, res) => {
     res.status(404).send('Not Found');
 });
 
-app.listen(port, () => {
-    console.log(`Server listening on http://localhost:${port}`)
-})
-
 export { app }
