@@ -160,9 +160,7 @@ const logoutUser = asyncHandler(async (req, res) => {
         },
         {
             new: true
-
         }
-
     )
     const options = {
         httpOnly: true,
@@ -176,9 +174,6 @@ const logoutUser = asyncHandler(async (req, res) => {
         .json(new apiResponse(200, {}, "User logged out!"))
 
 })
-
-
-
 
 
 export { registerUser, loginUser, logoutUser }
